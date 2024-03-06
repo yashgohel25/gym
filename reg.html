@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        height: auto;
+        background-color: antiquewhite;
+        justify-content: center;
+        margin-top: 12.5%;
+
+    }
+    .suc{
+        padding: 50px;
+        font-size: 50px;
+        border: 5px black solid;
+        color: palevioletred;
+        text-align: center;
+
+    }
+    .msg{
+        width: 100%;
+        height: auto;
+        font-size: 50px;
+        color: cadetblue;
+        animation: def infinite 2s;
+
+    }
+    hr{
+        width: 100%;
+        border: 2px black solid;
+    }
+    .thanks{
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 80px;
+    }
+    @keyframes abc {
+        25%{
+            color: palevioletred;
+        }
+        50%{
+            color: red;
+        }
+        75%{
+            color: palevioletred;
+        }
+        100%{
+            color: red;
+        }
+    }
+    @keyframes def {
+        25%{
+            color: red;
+        }
+        50%{
+            color: blue;
+        }
+        75%{
+            color: green;
+        }
+        100%{
+            color: aqua
+            ;
+        }
+    }
+</style>
+<body>
+   <div class="suc">
+    You have Success fully registor
+   </div>
+   <div class="msg">
+    <marquee behavior="alternate" direction=" "  onmouseover="this.stop()" onmouseout="this.start()" scrollamount="25">
+    We will be contact you shortly
+</marquee>
+   </div>
+   <hr>
+   <div class="thanks">
+    THANKS
+   </div>
+</body>
+</html>

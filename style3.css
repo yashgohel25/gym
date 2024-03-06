@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    color: silver;
+    text-transform: capitalize;
+  }
+  header nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px 20px;
+    height: auto;
+    background-color: black;
+    font-family: sans-serif;
+    
+  }
+  .logo{
+    font-size: 2em;
+  }
+    .logo:hover{
+      transform: scale(1.5);
+    }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+  }
+  ul li{
+    list-style-type: none;
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+  ul li a{
+    font-weight: 600;
+    text-decoration: none;
+  }
+  ul li a:hover{
+      text-decoration: underline 2px;
+      text-underline-offset: 4px;
+      color: #4ca8e1;
+  }
+body{
+    background-image: url(risen-wang-20jX9b35r_M-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 5%;
+    background-color: white;
+  }
+
+  table th,
+  table td {
+    padding: 10px;
+    border: 3px solid #000000;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+
+  }
+  h1{
+    color: yellow;
+    text-transform: capitalize;
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 2px;
+    width: 90%;
+    margin: auto;
+    font-size: 50px;
+    border: 3px white solid;
+  }
+  h1:hover{
+    text-shadow: 5px 1px 1px red;
+  }
+
+  .yoga-timetable {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.yoga-timetable caption {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #009688;
+}
+
+.yoga-timetable thead th {
+    background-color: #009688;
+    color: white;
+    padding: 10px;
+    text-align:  center;
+}
+
+.yoga-timetable tbody td {
+    padding: 10px;
+    border-bottom: 3px solid #000000;
+}
+
+.yoga-timetable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.yoga-timetable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.time{
+  height: auto;
+  padding: 30px;
+}
+  @media (max-width:768px)
+ {
+   ul 
+   {
+    display: block !important;
+   }
+   header nav{
+    display: block !important;
+   }
+ }
+ 
