@@ -1,0 +1,142 @@
+o<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FITNESS-7</title>
+      <link rel="stylesheet" href="style5.css">
+      <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body>
+      <header>
+          <nav>
+  
+              <div class="logo">
+                  FITNESS-7
+              </div>
+                  <ul>
+                      <li><a href="index.html">home</a></li>
+                      <li><a href="index2.html">Contect US</a></li>
+                      <li><a href="index3.html">schedule</a></li>
+                      <li><a href="index4.html">trainer</a></li>
+                      <li><a href="membership.html">member ship</a></li>
+                      <li><a href="index5.html">apply for gym</a></li>
+                  </ul>
+                  <div class="bot">
+                   <a href="https://mediafiles.botpress.cloud/c0eedd17-72a0-4370-8542-1841e12a78c0/webchat/bot.html " target="_blank"><i class="fa-brands fa-rocketchat"></i></a>
+                  </div>
+          </nav>
+      </header>
+    <form  action="" method="post" name="submit-to-google-sheet">
+      <h2>Registration Form Gym</h2>
+      <div class="form">
+        <label for="first-name">First Name:</label>
+        <input
+          type="text"
+          name="first-name"
+          autocomplete="off"
+          autofocus
+          required
+          title="only small letter allow"
+        />
+
+        <label for="last-name">Last Name:</label>
+        <input
+          type="text"
+          name="last-name"
+          autocomplete="off"
+          autofocus
+          required
+        />
+
+        <label for="dob">Date of Birth:</label>
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          autocomplete="off"
+          autofocus
+          required
+        />
+
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          name="email"
+          autocomplete="off"
+          autofocus
+          required
+        />
+
+        <label for="mobile">Mobile:</label>
+        <input
+          type="tel"
+          name="mobile"
+          autocomplete="off"
+          autofocus
+          pattern="[0-9]{10,10}"
+          required
+        />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="select">Select Gender</option>
+          <option selected value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+       
+        <label for="state">State:</label>
+        <input type="text" name="state" required />
+
+        <label for="city">City:</label>
+        <input type="text" name="city" required />
+
+        <label for="address">Address:</label>
+        <textarea name="address" required></textarea>
+
+        <label for="pin-code">Pin Code:</label>
+        <input type="text" name="pin-code" autocomplete="off" autofocus />
+      </div>
+      <label for="gender">Choose what you like</label>
+      <select id="gender" name="gender" required>
+        <option value="select">both</option>
+        <option selected value="male">yoga</option>
+        <option value="female">Gym</option>
+      </select>
+      <label for="trainer">select your trainer</label>
+      <select id="trainer" name="trainer" required>
+        <option value="select1">Select Gender</option>
+        <option selected value="John Doe">John Doe</option>
+        <option value="Alexander">Alexander</option>
+        <option value="Amelia">Amelia</option>
+        <option value="Charles">Charles</option>
+      </select>
+      <input type="submit" id="btn">
+  </form>
+    <script>
+      const form = document.forms["submit-to-google-sheet"];
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        SubmitFormData();
+      });
+
+      async function SubmitFormData(e) {
+        try {
+          const Webhook = await fetch("https://script.google.com/macros/s/AKfycbyRSbwpspxnyRsvXv4hNNGc8Cjcm6qZYmCHjcLPxsyMJI1X3z6KPFryKu8RceZ6lG377w/exec", {
+            method: "POST",
+            body: new FormData(document.forms["submit-to-google-sheet"])
+            // window.location.href = "reg.html";
+          })
+
+          if(Webhook.ok) {
+             console.log("Form Submitted");
+              
+          } else {
+            console.log("External Error Detected");
+          }
+        } catch (error) {
+          console.error("ERROR Detected")
+        }
+      }
+    </script>
+  </body>
+</html>

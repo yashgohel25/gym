@@ -1,0 +1,203 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  text-transform: capitalize;
+}
+body{
+  width: 100%;
+  height: auto;
+  background-image: url(risen-wang-20jX9b35r_M-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px 20px;
+  height: auto;
+  background-color: black;
+  position: static;
+  color: white;
+}
+
+.logo{
+  font-size: 2em;
+}
+  .logo:hover{
+    transform: scale(1.5);
+  }
+ul{
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+ul li{
+  list-style-type: none;
+  font-size: 22px;
+  font-weight: 300;
+}
+ul li a{
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+}
+ul li a:hover{
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: #4ca8e1;
+    text-decoration: none;
+} 
+.bot a i{
+  font-size: 22px;
+  color: white
+}
+.bot a i:hover{
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+  color: #4ca8e1;
+  text-decoration: none;
+
+}
+ body{
+  background-image: url(risen-wang-20jX9b35r_M-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+ }
+ .box{
+  width: 50%;
+  height: auto;
+  background-color: bisque;
+  margin:auto;
+  margin-top: 50px;
+  border: 2px black solid;
+  border-radius: 12px;
+ }
+ .contain{
+    padding-top: 30px;
+    text-transform: capitalize;
+    color: palevioletred;
+    font-size: 50px;
+     text-align: center;
+ }
+ .contain2{
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 20px;
+ }
+ .t3{
+  padding: 10px;
+  color: #4ca8e1;
+
+ }
+  .t4{
+    margin-left: 20px;
+    width: 50%;
+    text-transform: capitalize;
+    color: palevioletred;
+    font-size: 25px;
+  }
+  .contain3{
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 20px;
+   }
+   .t5{
+    padding: 10px;
+    color: #4ca8e1;
+  
+   }
+    .t6{
+      margin-left: 20px;
+      width: 50%;
+      text-transform: capitalize;
+      color: palevioletred;
+      font-size: 25px;
+    }
+    .contain4{
+      display: flex;
+      margin: auto;
+      margin-top: 40px;
+      margin-left: 20px;
+     }
+     .t7{
+      padding: 10px;
+      color: #4ca8e1;
+    
+     }
+      .t8{
+        margin-left: 20px;
+        width: 50%;
+        text-transform: capitalize;
+        color: palevioletred;
+        font-size: 25px;
+        cursor: pointer;
+      }
+
+      .t8:hover{
+        color: red;
+      }
+      .contain5{
+        width: 100%;
+        font-size: 30px;
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-around;
+      }
+      .logo1{
+        padding: 5px;
+        transition: 1.1s linear;
+        cursor: pointer;
+      }
+      .logo1:hover{
+        transform:  scale(1.5) rotate(360deg);
+        transition: 0.7s ease-in;
+        background-image: linear-gradient(to left, rgb(79,91,213), rgb(150,47,191), rgb(214,41,118), rgb(250,126,30), rgb(254,218,117) );
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      
+      }
+      .logo2{
+        padding: 5px;
+        transition: 1.1s linear;
+        cursor: pointer;
+      }
+      .logo2:hover{
+        transform:  scale(1.5) rotate(360deg);
+        transition: 0.7s ease-in;
+        color: black;
+      
+      }
+      .logo3{
+        padding: 5px;
+        transition: 1.1s linear;
+        cursor: pointer;
+      }
+      .logo3:hover{
+        transform:  scale(1.5) rotate(360deg);
+        transition: 0.7s ease-in;
+        color: #316FF6;
+      
+      }
+      .logo4{
+        padding: 5px;
+        transition: 1.1s linear;
+        cursor: pointer;
+      }
+      .logo4:hover{
+        transform:  scale(1.5) rotate(360deg);
+        transition: 0.7s ease-in;
+        color: red;
+      
+      }
+      
